@@ -1,11 +1,11 @@
-import React from "react";
-import Home from "./Pages/Home"; // Ensure the path is correct
+
+// src/App.js
+import React from 'react';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Layout />
   );
 }
 
