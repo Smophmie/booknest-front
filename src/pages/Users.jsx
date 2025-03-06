@@ -11,9 +11,10 @@ function Users() {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('api/users');
+      const response = await fetch('http://195.15.204.108/api/users');
       const data = await response.json();
       setUsers(data);
+      console.log(users);
     } catch (error) {
       console.error("Error fetching users: ", error);
     }

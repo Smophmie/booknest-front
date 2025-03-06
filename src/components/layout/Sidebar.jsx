@@ -41,6 +41,17 @@ function Sidebar() {
               <span>Bibliothèque</span>
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/loans"
+              className={({ isActive }) =>
+                isActive ? "flex items-center p-3 rounded-lg bg-blue-500" : "flex items-center p-3 rounded-lg hover:bg-gray-700"
+              }
+            >
+              <FaBookmark className="mr-2" />
+              <span>Emprunts</span>
+            </NavLink>
+          </li>
         </ul>
       </nav>
       <div className="mt-auto">

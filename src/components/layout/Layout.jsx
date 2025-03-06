@@ -10,6 +10,7 @@ import Sidebar from './Sidebar';
 import Home from '../../pages/Home';
 import Library from '../../pages/Library';
 import Users from '../../pages/Users';
+import Loans from '../../pages/Loans'
 
 function Layout() {
   return (
@@ -23,6 +24,7 @@ function Layout() {
                 <Route path="/" element={<Home />} />
                 <Route path="/users" element={<Users />} />
                 <Route path="/library" element={<Library />} />
+                <Route path="/loans" element={<Loans />} />
               </Routes>
             </main>
             <Footer />
