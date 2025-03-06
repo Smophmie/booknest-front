@@ -8,8 +8,8 @@ import Sidebar from './Sidebar';
 
 // On importe toutes les pages
 import Home from '../../pages/Home';
-import About from '../../pages/About';
 import Library from '../../pages/Library';
+import Users from '../../pages/Users';
 
 function Layout() {
   return (
@@ -21,7 +21,7 @@ function Layout() {
             <main >
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/users" element={<Users />} />
                 <Route path="/library" element={<Library />} />
               </Routes>
             </main>

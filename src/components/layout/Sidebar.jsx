@@ -16,37 +16,35 @@ function Sidebar() {
               }
             >
               <FaBox className="mr-2" />
-              <span>Home</span>
+              <span>Accueil</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/users"
               className={({ isActive }) =>
                 isActive ? "flex items-center p-3 rounded-lg bg-blue-500" : "flex items-center p-3 rounded-lg hover:bg-gray-700"
               }
             >
               <FaUsers className="mr-2" />
-              <span>About</span>
+              <span>Les utilisateurs</span>
             </NavLink>
           </li>
           <li>
             <NavLink
-              to="/dashboard"
+              to="/library"
               className={({ isActive }) =>
                 isActive ? "flex items-center p-3 rounded-lg bg-blue-500" : "flex items-center p-3 rounded-lg hover:bg-gray-700"
               }
             >
               <FaBookmark className="mr-2" />
-              <span>Dashboard</span>
+              <span>Bibliothèque</span>
             </NavLink>
           </li>
         </ul>
       </nav>
       <div className="mt-auto">
-        <div className="flex items-center p-3 hover:bg-gray-700 rounded-lg cursor-pointer">
-          <FaCog className="mr-2" /> Paramètres
-        </div>
+        
         <div className="flex items-center p-3 hover:bg-gray-700 rounded-lg cursor-pointer text-red-400">
           <FaSignOutAlt className="mr-2" /> Déconnexion
         </div>

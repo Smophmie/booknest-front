@@ -1,8 +1,8 @@
-// src/pages/About.jsx
+// src/pages/Users.jsx
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-function About() {
+function Users() {
   const [users, setUsers] = useState([{ name: "User 1" }, { name: "User 2" }]);
 
   useEffect(() => {
@@ -63,4 +63,4 @@ function About() {
   );
 }
 
-export default About;
+export default Users;
