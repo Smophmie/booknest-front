@@ -12,28 +12,10 @@ export default function BookNest() {
   return (
     <div className="flex h-screen bg-gray-900 text-white">
       {/* Sidebar */}
-      
 
       {/* Main Content */}
       <main className="flex-1 p-6">
-        {/* Top Section: Search Bar & User Avatar */}
-        <div className="flex justify-between items-center">
-          <div className="relative w-1/3">
-            <input
-              type="text"
-              placeholder="Rechercher..."
-              className="w-full p-2 pl-10 bg-gray-700 text-white rounded-lg focus:outline-none"
-            />
-            <FaSearch className="absolute left-3 top-3 text-gray-400" />
-          </div>
-
-          {/* User Avatar */}
-          <div className="flex items-center space-x-3">
-            <span className="text-sm">Bonjour, User</span>
-            <FaUserCircle className="text-3xl text-gray-400" />
-          </div>
-        </div>
-
+        
         {/* Featured Book */}
         <div className="mt-6 bg-gray-800 p-5 rounded-lg">
           <h2 className="text-lg text-gray-400">Frank Miller</h2>

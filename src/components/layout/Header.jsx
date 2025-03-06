@@ -1,32 +1,23 @@
-// src/components/layout/Header.jsx
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { FaSearch, FaUserCircle } from "react-icons/fa";
 
 function Header() {
   return (
-    <header style={styles.header}>
-      <h1>Mon Intranet</h1>
-      <nav style={styles.nav}>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">À propos</Link>
-        <Link to="/dashboard">Dashboard</Link>
-      </nav>
+    <header className="flex justify-between items-center">
+      <div className="relative w-1/3">
+        <input
+          type="text"
+          placeholder="Rechercher..."
+          className="w-full p-2 pl-10 bg-gray-700 text-white rounded-lg focus:outline-none"
+        />
+        <FaSearch className="absolute left-3 top-3 text-gray-400" />
+      </div>
+      <div className="flex items-center space-x-3">
+        <span className="text-sm">Bonjour, User</span>
+        <FaUserCircle className="text-3xl text-gray-400" />
+      </div>
     </header>
   );
 }
-
-const styles = {
-  header: {
-    backgroundColor: '#eee',
-    padding: '1rem',
-    borderBottom: '1px solid #ccc'
-  },
-  nav: {
-    marginTop: '1rem',
-    display: 'flex',
-    gap: '1rem'
-  }
-};
 
 export default Header;
