@@ -30,7 +30,7 @@ export default function Login() {
     };
 
     return (
-        <div className="h-screen bg-gray-900 text-white p-12">
+        <div className="h-screen bg-gray-900 text-white flex flex-col items-center justify-center">
             <h2 className="my-6 text-lg font-bold">Connexion</h2>
             {message && <p className="mb-4 text-sm text-red-500">{message}</p>}
             <form className="space-y-4 w-64" onSubmit={handleSubmit}>
